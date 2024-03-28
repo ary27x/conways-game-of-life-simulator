@@ -1,23 +1,14 @@
-import logo from './logo.svg';
+import React , {useState} from 'react';
 import './App.css';
+import Board from './components/Board';
+import Header from './components/Header';
 
 function App() {
+  const [running , setRunning] = useState(false)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header running = {running} setRunning = {setRunning}/>
+      <Board running ={running}/>
     </div>
   );
 }

@@ -1,0 +1,27 @@
+#board-wrapper
+{
+    margin-top: 5vh;    
+}
+
+
+
+.board-row
+{
+    display: flex;
+    justify-content: center;
+}
+    .board-visible
+{
+    border : 1px solid black;
+    padding : 1vh;
+    background: black;
+}
+
+.board-hidden
+{
+
+    border : 1px solid black;
+    padding : 1vh;
+    background: white;
+}
+
